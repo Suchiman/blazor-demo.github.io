@@ -276,7 +276,7 @@ function getAssemblyNameFromUrl(url) {
     var lastSegment = url.substring(url.lastIndexOf('/') + 1);
     var queryStringStartPos = lastSegment.indexOf('?');
     var filename = queryStringStartPos < 0 ? lastSegment : lastSegment.substring(0, queryStringStartPos);
-    return filename.replace(/\.dll$/, '');
+    return filename.replace(/\.js$/, '');
 }
 exports.getAssemblyNameFromUrl = getAssemblyNameFromUrl;
 
